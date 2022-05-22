@@ -6,10 +6,12 @@
   justify-content : space-around;
 }
 
-@media screen and (min-width: 800px){
-  .card-headline{
-    width: 25%;
-  }
+.card-headline1{
+  grid-area: headline1;
+}
+
+.card-headline2{
+  grid-area: headline2;
 }
 
 .card-headline-icon{
@@ -26,14 +28,9 @@
 /* Card list */
 
 .card-list{
+  grid-area: list;
   display: flex;
   gap: 1.75rem;
-}
-
-@media screen and (min-width: 800px){
-  .card-list{
-    width: 50%;
-  }
 }
 
 .card-list-item{
@@ -63,17 +60,12 @@
 /* Card Progress */
 
 .card-progress{
+  grid-area: engagement;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   gap: var(--length-md2);
-}
-
-@media screen and (min-width: 800px){
-  .card-progress{
-    width: 25%;
-  }
 }
 
 .card-progress-donut{
@@ -104,13 +96,8 @@
 /* Growth Card */
 
 .card-growth{
+  grid-area: growth;
   text-align: center;
-}
-
-@media screen and (min-width: 800px){
-  .card-growth{
-    width: 50%;
-  }
 }
 
 .card-growth-headlines{
@@ -122,22 +109,17 @@
 /* Regions Card */
 
 .card-regions{
+  grid-area: regions;
   padding: 1rem 1.5rem;
   text-align: center;
 }
 
-@media screen and (min-width: 800px){
-  .card-regions{
-    width: 25%;
-  }
-}
-
 /* Author and Activity Cards */
 
+.card-author{
+  grid-area: authors;
+}
 
-@media screen and (min-width: 800px){
-  .card-activity,
-  .card-author{
-    width: 50%;
-  }
+.card-activity{
+  grid-area: activity;
 }

@@ -2,11 +2,9 @@
 /* Card Components */
 
 .card{
-  flex-grow: 1;
   padding: 1rem;
   background: var(--color-card);
   border-radius: 1rem;
-  margin-bottom: var(--length-md1);
 }
 
 .card-header{
@@ -118,15 +116,7 @@
 }
 
 
-/* Author and Activity Cards */
 
-
-@media screen and (min-width: 800px){
-  .card-activity,
-  .card-author{
-    width: 50%;
-  }
-}
 
 /* Timeline */
 
