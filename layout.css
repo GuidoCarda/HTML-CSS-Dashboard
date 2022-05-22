@@ -26,10 +26,7 @@
       "activity activity"
     ;
   }
-  
 }
-
-
 
 @media screen and (min-width: 800px){
   .container{
@@ -43,4 +40,40 @@
     max-width: 800px;
     margin: 0 auto;
   }
+}
+
+@keyframes hide{
+  0%, 50%{ opacity: 1; visibility: visible;}
+  100% { opacity: 0; visibility: hidden; }
+}
+
+
+.preloader{
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: var(--color-background);
+  opacity: 0; 
+  visibility: hidden;
+  animation: hide 1s linear;
+}
+
+@keyframes spin{
+ 100%{
+   transform: rotate(360deg);
+ }
+}
+
+.spinner{
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  border: .5rem solid var(--color-default);
+  border-top-color: var(--color-primary);
+  animation: spin 1s infinite;
 }
