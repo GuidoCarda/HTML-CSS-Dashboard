@@ -1,5 +1,6 @@
 :root{
   --color-primary: #44f6fd;
+  --color-primary: #44f6fd;
   --color-accent: #fffffa;
   --color-default: #363636;
 
@@ -29,4 +30,9 @@ body{
 
 h1,h2,h3,h4,h5,h6 {
   line-height: 1;
+}
+
+button{
+  font-family: inherit;
+  cursor: pointer;
 }
